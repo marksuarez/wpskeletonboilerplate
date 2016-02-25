@@ -214,7 +214,7 @@ a {
   color: #0000ff;
   text-decoration: none; }
   a:hover {
-    color: white; }
+    color: #6666ff; }
   a:focus {
     outline: 0; }
   a:hover {
@@ -274,6 +274,8 @@ img {
 /* nav */
 .nav {
   float: right; }
+  .nav ul li {
+    display: inline-block; }
 
 /* sidebar */
 /* footer */

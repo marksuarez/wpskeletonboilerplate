@@ -23,7 +23,7 @@ a {
   color: $link-color;
   text-decoration: none;
   &:hover {
-    color: lighten($link-color, 50%);
+    color: lighten($link-color, 20%);
   }
   &:focus {
     outline: 0;
@@ -103,7 +103,15 @@ img {
 /* nav */
 .nav {
   float:right;
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
 }
+
+
+
 /* sidebar */
 .sidebar {
 
