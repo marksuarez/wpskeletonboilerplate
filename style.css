@@ -228,7 +228,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #f6f7f7; }
 
 /* global box-sizing */
 *,
@@ -264,6 +264,10 @@ img {
   position:relative;*/ }
 
 /* header */
+.header {
+  background-color: #f6f7f7;
+  padding: 10px 0; }
+
 /* logo */
 .logo {
   float: left; }
@@ -773,8 +777,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
+  background: white;
+  border: 1px solid #f6f7f7;
   border-radius: 2px; }
 
 pre > code {
@@ -786,7 +790,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #f6f7f7; }
 
 th:first-child,
 td:first-child {

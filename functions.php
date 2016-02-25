@@ -397,7 +397,7 @@ function create_post_type_projects()
 {
     register_taxonomy_for_object_type('category', 'project'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'project');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_post_type('projects', // Register Custom Post Type
         array(
         'labels' => array(
             'name' => __('Project', 'project'), // Rename these to suit
