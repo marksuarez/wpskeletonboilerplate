@@ -214,7 +214,7 @@ a {
   color: #0000ff;
   text-decoration: none; }
   a:hover {
-    color: #0000e6; }
+    color: white; }
   a:focus {
     outline: 0; }
   a:hover {
@@ -265,10 +265,16 @@ img {
 
 /* header */
 /* logo */
+.logo {
+  float: left; }
+
 .logo-img {
   width: 200px; }
 
 /* nav */
+.nav {
+  float: right; }
+
 /* sidebar */
 /* footer */
 /*------------------------------------*    MISC
