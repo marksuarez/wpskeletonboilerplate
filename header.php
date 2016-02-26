@@ -40,8 +40,16 @@
 				</div>
 				<!-- /logo -->
 
+				<!-- Responsive Navigation Hamburger Toggle -->
+				<div class="navbar-toggle" title="Menu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>	
+				<!-- / -->
+
 				<!-- nav -->
-				<nav class="nav" role="navigation">
+				<nav class="nav nav-hide" role="navigation">
 					<?php html5blank_nav(); ?>
 				</nav>
 				<!-- /nav -->

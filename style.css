@@ -275,12 +275,86 @@ img {
 .logo-img {
   width: 200px; }
 
-/* nav */
-.nav {
-  float: right; }
-  .nav ul li {
-    display: inline-block; }
+/*------------------------------------*    Boilerplate Responsive Navigation
+\*------------------------------------*/
+/* to remove this navigation, and use something like TapTap, just delete this css, delete the jquery script, and delete the reference in the markup. */
+/* Mobile First */
+nav,
+.navbar-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table; }
+  nav ul {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0; }
+    nav ul li {
+      list-style: none; }
+      nav ul li a {
+        text-decoration: none; }
+
+.nav-hide {
+  display: none; }
+
+.navbar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 30px;
+  z-index: 20;
+  cursor: pointer; }
+  .navbar-toggle .bar1, .navbar-toggle .bar2, .navbar-toggle .bar3 {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 7px;
+    background-color: #222;
+    transition: all 0.25s ease-in-out; }
+  .navbar-toggle.navbar-on .bar1, .navbar-toggle.navbar-on .bar2, .navbar-toggle.navbar-on .bar3 {
+    background-color: white; }
+  .navbar-toggle.navbar-on .bar1 {
+    transform-origin: 10% 40%;
+    transform: rotate(45deg); }
+  .navbar-toggle.navbar-on .bar3 {
+    transform-origin: 10% 40%;
+    transform: rotate(-45deg); }
+  .navbar-toggle.navbar-on .bar2 {
+    background-color: transparent; }
+
+/* larger than phablet */
+@media (min-width: 550px) {
+  .navbar-toggle {
+    display: none; }
+  .nav-hide {
+    display: block; }
+  nav {
+    position: relative;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    float: right;
+    display: inline-block; }
+    nav ul {
+      display: inline-block; }
+      nav ul li {
+        display: inline-block; } }
+
+/*------------------------------------*    / Boilerplate Responsive Navigation
+\*------------------------------------*/
 /* sidebar */
 /* footer */
 /*------------------------------------*    MISC

@@ -4,7 +4,15 @@
 		
 		'use strict';
 		
-		// DOM ready, take it away
+		// Navbar function
+
+		$(function(){
+		    $('.navbar-toggle, nav').click(function(){
+		        $('.navbar-toggle').toggleClass('navbar-on');
+		        $('nav').fadeToggle(300);
+		        $('nav').removeClass('nav-hide');
+		    });
+		});
 		
 	});
 	
