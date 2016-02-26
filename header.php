@@ -49,7 +49,7 @@
 				<!-- / -->
 
 				<!-- nav -->
-				<nav class="nav nav-hide" role="navigation">
+				<nav class="nav" role="navigation">
 					<?php html5blank_nav(); ?>
 				</nav>
 				<!-- /nav -->
