@@ -208,7 +208,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222;
+  margin-top: 100px; }
 
 a {
   color: #0000ff;
@@ -265,7 +266,13 @@ img {
 
 /* header */
 .header {
-  background-color: #f6f7f7;
+  z-index: 10;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
   padding: 10px 0; }
 
 /* logo */
@@ -300,7 +307,7 @@ nav {
   display: table;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.25s ease-in-out; }
+  transition: all 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   nav ul {
     display: table-cell;
     vertical-align: middle;
@@ -329,7 +336,7 @@ nav {
     height: 2px;
     margin-bottom: 7px;
     background-color: #222;
-    transition: all 0.25s ease-in-out; }
+    transition: all 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   .navbar-toggle.navbar-on .bar1, .navbar-toggle.navbar-on .bar2, .navbar-toggle.navbar-on .bar3 {
     background-color: white; }
   .navbar-toggle.navbar-on .bar1 {
